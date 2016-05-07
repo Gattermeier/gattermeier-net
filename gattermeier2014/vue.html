@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gattermeier</title>
+    <link rel="stylesheet" type="text/css" href="./css/gattermeier-base.css" />
+    <link rel="stylesheet" type="text/css" href="./css/gattermeier-blueish.css" />
+    <link rel="stylesheet" type="text/css" href="./css/component-grid.css" />
+    <link rel="stylesheet" type="text/css" href="./css/component-splitlayout.css" />
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" type="text/css" href="./bower_components/fontawesome/css/font-awesome.min.css">
+    <style>
+    #rb-grid a {
+      transition: color 250ms;
+      -webkit-transition: color 250ms;
+    }
+    
+    #rb-grid a:hover {
+      color: white;
+    }
+    </style>
+</head>
+
+<body>
+  <div id="data">
+    <input v-model="search">
+    <ul id="rb-grid" class="rb-grid rb-grid-right clearfix">
+        <li v-repeat="item in items | filterBy search in fields" class="re-grid-element {{item.classes}}">
+        <div>
+          <h3>{{item.title}}</h3>
+          <span>{{item.text}}</span>
+          <div v-if="item.links.length > 0" class="more">Read:
+            <span v-repeat="link in item.links">
+               <a href="{{link.href}}" target="_blank" style=""><i class="fa {{link.class}}"></i> 
+               {{link.title}}</a>
+            </span>
+          </div>
+        </div>
+        </li>
+    </ul>
+    </div>
+
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/vue/dist/vue.js"></script>
+    <script src="./node_modules/vue-resource/dist/vue-resource.js"></script>
+    <script>
+       $(document).ready(function() {
+          
+          var request = $.ajax({
+            url: './data.json',
+            method: "GET",
+            contentType: "application/json",
+            dataType: "json"
+          });
+
+          request.success(function(data) {
+            console.log(data);
+            var data = new Vue({
+              el: '#data',
+              data: data
+            })
+          });
+
+          request.fail(function(jqXHR, textStatus) {
+            console.log("Request failed: ", jqXHR.status, textStatus);
+          });
+
+        });
+
+    /*
+
+      {
+        title:'Title',
+        text:'text',
+        classes: 'class',
+        links:[{href:'href',title:'title'}],
+        tags: ['Node.js', 'Javascript']
+      }
+
+      {
+            search: '',
+            fields: ['tags'],
+            items: [{
+                title:'Title',
+                text:'text',
+                classes: 'class',
+                links:[{href:'href',class:'fa-medium',title:'Medium'}],
+                tags: ['Node.js', 'Javascript']
+            },{
+                title:'Title',
+                text:'text',
+                classes: 'class',
+                links:[{href:'href'},{class:'fa-medium'},{title:'Medium'}],
+                tags: ['Node.js', 'Javascript']
+            }]
+        }
+
+    */
+    </script>
+
+</body>
+
+</html>

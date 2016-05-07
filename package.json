@@ -1,0 +1,22 @@
+{
+  "name": "gattermeier-net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gattermeier/gattermeier-net.git"
+  },
+  "author": "Matthias Gattermeier <matthias.gattermeier@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gattermeier/gattermeier-net/issues"
+  },
+  "homepage": "https://github.com/Gattermeier/gattermeier-net#readme",
+  "dependencies": {
+    "inert": "^3.2.0"
+  }
+}

@@ -1,0 +1,175 @@
+{
+    "search": "",
+    "fields": ["tags"],
+    "items": [{
+        "title": "Oxidizer.io",
+        "text": "A unified commenting system for the internet. Built with: Node.js / Express for RESTfull API backend, React for frontend, Chrome Extension for Client, MySQL as Database and Redis as Session Store",
+        "classes": "rb-span-2",
+        "links": [{
+            "href": "https://github.com/Gattermeier/Oxidizer",
+            "class": "fa-github",
+            "title": "Github"
+        }, {
+            "href": "https://www.oxidizer.io/",
+            "class": "fa-globe",
+            "title": "Web"
+        }, {
+            "href": "https://chrome.google.com/webstore/detail/oxidizer/mjfdkgkfbceiiakhblgkcofjfoninggj",
+            "class": "fa-chrome",
+            "title": "Chrome Extension"
+        }],
+        "tags": ["Node.js", "Javascript", "Express", "API", "Chrome Extension", "React", "MySQL", "Redis", "Handlebars"]
+    }, {
+        "title": "Memoize",
+        "text": "A memoize library with cache limitations governed by function call frequency or performance. Use it for algorithmic problems like fibonacci numbers in dynamic programming. Node and browser support.",
+        "classes": "rb-span-2",
+        "links": [{
+            "href": "https://github.com/Gattermeier/memoize",
+            "class": "fa-github",
+            "title": "Github"
+        }],
+        "tags": ["Javascript"]
+    }, {
+        "title": "Notes",
+        "text": "A simple collaborative note taking app, built on Node, Angular, Bootstrap 3 & Passport.js.",
+        "classes": "class",
+        "links": [{
+            "href": "https://github.com/Gattermeier/notes",
+            "class": "fa-github",
+            "title": "Github"
+        }],
+        "tags": ["Node.js", "Javascript", "Angular", "Bootstrap", "Passport"]
+    }, {
+        "title": "R",
+        "text": "A demo RESTful API returning (somewhat) random number between 0 and 1",
+        "classes": "class",
+        "links": [{
+            "href": "https://github.com/Gattermeier/r",
+            "class": "fa-github",
+            "title": "Github"
+        }, {
+            "href": "http://r-51638.onmodulus.net/",
+            "class": "fa-plug",
+            "title": "API"
+        }],
+        "tags": ["Node.js", "Express", "Javascript", "API"]
+    }, {
+        "title": "Node.js Proof of Concept Virus",
+        "text": "A proof of concept virus that attempts to infect other node applications. Um.. be careful with this.",
+        "classes": "rb-span-2",
+        "links": [{
+            "href": "https://github.com/Gattermeier/nodejs-virus",
+            "class": "fa-github",
+            "title": "Github"
+        }],
+        "tags": ["Node.js", "Javascript"]
+    }, {
+        "title": "Marketing Overlays",
+        "text": "A third-party javascript library and PaaS for injecting marketing overlays in websites. Built with Node.js / Express, MongoDB, Angular JS and Jade",
+        "classes": "rb-span-2",
+        "links": [{
+            "href": "https://github.com/Gattermeier/Lafinity",
+            "class": "fa-github",
+            "title": "Github"
+        }, {
+            "href": "https://www.lafinity.io/",
+            "class": "fa-globe",
+            "title": "Web"
+        }],
+        "tags": ["Node.js", "Express", "Angular", "Javascript", "PaaS", "MongoDB", "Jade"]
+    }, {
+        "title": "Feed.js",
+        "text": "Utilizes Google Feed API to merge several RSS feeds into single display",
+        "classes": "class",
+        "links": [{
+            "href": "https://github.com/Gattermeier/Feed.js",
+            "class": "fa-github",
+            "title": "Github"
+        }],
+        "tags": ["Javascript", "API", "RSS"]
+    }, {
+        "title": "Menu Concept",
+        "text": "Reimplementation of a Codrops menu concept in jQuery",
+        "classes": "class",
+        "links": [{
+            "href": "https://github.com/Gattermeier/feam",
+            "class": "fa-github",
+            "title": "Github"
+        }, {
+            "href": "http://www.gattermeier.net/frontend-admin-menu",
+            "class": "fa-globe",
+            "title": "Demo"
+        }],
+        "tags": ["Javascript", "jQuery"]
+    }, {
+        "title": "VideoCloud",
+        "text": "MVP to explore a SoundCloud like platform for videos Built with Node.js / Express / Angular.js / MongoDB",
+        "classes": "rb-span-2",
+        "links": [{
+            "href": "https://github.com/Gattermeier/Video-Cloud",
+            "class": "fa-github",
+            "title": "Github"
+        }],
+        "tags": ["Node.js", "Javascript", "Express", "Angular", "MongoDB"]
+    }, {
+        "title": "U.S. Congress on Twitter",
+        "text": "A small Node.js app that reads a public API and extracts all Twitter handles of Members of U.S. Congress to save the results into a CSV file.",
+        "classes": "rb-span-2",
+        "links": [{
+            "href": "https://github.com/Gattermeier/congress-twitter",
+            "class": "fa-github",
+            "title": "Github"
+        }],
+        "tags": ["Node.js", "Javascript", "API"]
+    }, {
+        "title": "Slideshow",
+        "text": "A responsive slideshow, plug and play for your website",
+        "classes": "class",
+        "links": [{
+            "href": "https://github.com/Gattermeier/Slideshow",
+            "class": "fa-github",
+            "title": "Github"
+        }],
+        "tags": ["Javascript", "jQuery"]
+    }, {
+        "title": "RegEx Challenge",
+        "text": "A web app designed to help engineers master Regular Expressions with progress tracking. Tech Stack: Node.js / Express Backend, Passport JS & Google Oauth, ReactJS, Material UI and Bootstrap Frontend",
+        "classes": "rb-span-2",
+        "links": [{
+            "href": "https://github.com/Gattermeier/RegexChallenge",
+            "class": "fa-github",
+            "title": "Github"
+        }],
+        "tags": ["Node.js", "Javascript", "Express", "Passport", "OAuth", "React", "Material UI"]
+    }, {
+        "title": "Blog: Node.js Performance",
+        "text": "An incomplete list of Node.js performance tips.",
+        "classes": "class",
+        "links": [{
+            "href": "https://medium.com/node-and-beyond/the-incomplete-collection-of-node-js-performance-tips-94cc712661bd",
+            "class": "fa-medium",
+            "title": "Medium"
+        }],
+        "tags": ["Blog", "Node.js", "Javascript"]
+    }, {
+        "title": "Blog: Node.js Configurations",
+        "text": "Environmental dependend Node.js configuration, or: how NOT to accidentially commit / push your keys and secrets to GitHub.",
+        "classes": "rb-span-2",
+        "links": [{
+            "href": "https://medium.com/@gattermeier/environment-dependent-node-js-configuration-b51149286e7e",
+            "class": "fa-medium",
+            "title": "Medium"
+        }],
+        "tags": ["Blog", "Node.js", "Javascript"]
+    }, {
+        "title": "Blog Collection: Rackspace",
+        "text": "Blog posts on how to set up your LAMP or securing your RAX box by revoking root access via SSH, SCP and SFTP.",
+        "classes": "rb-span-2",
+        "links": [{
+            "href": "https://medium.com/rackspace-magic",
+            "class": "fa-medium",
+            "title": "Medium"
+        }],
+        "tags": ["LAMP", "Rackspace", "SSH", "SCP", "SFTP"]
+    }]
+}

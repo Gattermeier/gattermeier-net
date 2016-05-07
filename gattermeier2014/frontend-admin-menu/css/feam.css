@@ -1,0 +1,153 @@
+
+    
+    #feam-content .visible {opacity: 1;}
+    #feam-content .hidden {opacity: 0;}
+    
+    #feam-wrapper {
+        z-index:1030;
+	left:49px;
+        bottom:49px;
+    }
+    #feam-wrapper, #feam-content {
+        position: fixed;
+        height:50px;
+        width:50px;
+       
+    }
+    #feam-content {
+	display: block;
+	left:50px;
+        bottom:50px;
+        transition:
+	    width 400ms 100ms,
+	    height 400ms 100ms,
+	    top 400ms 100ms,
+	    bottom 400ms 100ms,
+	    left 400ms 100ms;
+        transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+/*
+        -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, bottom 0.4s 0.1s, left 0.4s 0.1s;
+        -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+*/	
+        /* fix for css articafts in Safari and Chrome */
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform:translate3d(0,0,0);
+    }
+    
+    #feam-btn {
+        z-index:1030;
+        width: 50px;
+        height:50px;
+        display: block;
+	transition: background 0.25s 0.25s;
+        transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+/*
+        -webkit-transition: background 0.25s 0.25s;
+        -webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+*/
+        font-size: 1em;
+        vertical-align: baseline;
+        /*overflow: hidden;*/
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        float:right;
+    }
+    
+    #feam-btn .close {display: none;}
+    
+    .feam-btn-open {
+        bottom: 0px !important;
+        left: 0px !important;
+        width: 220px !important;
+        height: 100% !important;
+        float: right;
+    }
+    .fullwidth {
+        width:100% !important;
+    }
+
+    #feam-content > div {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.25s 0.25s, opacity 0.10s 0.10s;
+        /*-webkit-transition: visibility 0.25s 0.25s, opacity 0.10s 0.10s;*/
+    }
+    .feam-btn-open > div {
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    .feam-menu {
+        width: 220px;
+	height:100%;
+    }
+    .feam-pane {
+        float: left;
+        width:100%;
+    }
+    #feam-off {
+        margin-left:0px;
+        width:95%;
+	width: calc(100% - 80px);
+        z-index:1010;
+        transition: margin-left 0.4s 0.1s;
+        /*-webkit-transition: margin-left 0.4s 0.1s;*/
+	
+         /* fix for css articafts in Safari and Chrome */
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform:translate3d(0,0,0);
+    }
+    .push {
+        margin-left:220px !important;
+        }
+        
+    .feam-tab-pane {
+        visibility: hidden;
+        position: absolute;
+        z-index: 1010;
+        top:0;
+        left:230px;
+	right:50px;
+        opacity: 0;
+        transition: opacity 0.25s 0.5s;
+        /*-webkit-transition: opacity 0.25s 0.5s;*/
+	
+        /* fix for css articafts in Safari and Chrome */
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+        -webkit-transform:translate3d(0,0,0);
+        }
+    
+    #feam-content .active {
+        visibility: visible;
+        left:240px;
+        opacity: 1;
+    }
+    
+    
+    
+    .feam-tab-pane input[type="text"],
+    .feam-tab-pane input[type="password"],
+    .feam-tab-pane input[type="email"] {
+	font-size: 1em;
+	padding: 0.3em;
+	line-height: 1em;
+    }
+
+    .feam-tab-pane input:focus {
+	outline: 0;
+    }
+
+    .feam-tab-pane button,
+    .feam-tab-pane .button {
+	display: block;
+	margin-top: 1.5em;
+	padding: .5em;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 800;
+	font-size: 1em;
+    }

@@ -1,0 +1,40 @@
+<<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+
+
+
+
+    <template id="data-template">
+    {{name}} 
+    </template>
+
+    <div id="demo">
+      <democomponent></democomponent>
+    </div>
+
+    <script type="text/x-template" id="grid-template">
+      {{dummy}}
+    </script>
+    <demo-grid></demo-grid>
+
+
+
+<script type="text/javascript">
+  Vue.component('demo-grid', {
+  template: '#grid-template',
+  replace: true
+});
+
+ new Vue({
+  el: '#demo',
+  data: {
+    dummy:'hi'
+  }});
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+.banner {background:#52b660 }
+#set-1 {
+	background: #52b660 !important;
+        /*margin: -1em -2em -1em -2em;  */
+}
+
+.side {outline-width: 0 !important;}
+.side-left {
+	background: rgb(128, 128, 255);
+	outline: 1px solid rgb(128, 128, 255); /* avoid gap */
+}
+.side-right {
+	color: rgb(128, 128, 255);
+}
+.profile {
+	background: rgb(128, 128, 255);
+}
+.side-right .intro-content h1 > span:nth-child(2):before {
+	background: rgb(128, 128, 255);
+}
+
+
+.back {
+	color: rgb(128, 128, 255);
+}
+
+.page-right {
+	outline: 6px solid #ecf0f1; /* avoid rounding gaps */
+	background: #ecf0f1;
+	color: #97a8b2;
+}
+
+.page-left {
+	outline: 6px solid #fff; /* avoid rounding gaps */
+	/*background: #333;*/
+	color: #333;
+}

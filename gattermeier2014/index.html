@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="p:domain_verify" content="2db08a65ce74688f20802df5ba04fa4a" />
+    <title>Gattermeier</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/gattermeier-base.css" />
+    <link rel="stylesheet" type="text/css" href="./css/gattermeier-blueish.css" />
+    <link rel="stylesheet" type="text/css" href="./css/component-grid.css" />
+    <link rel="stylesheet" type="text/css" href="./css/component-splitlayout.css" />
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" href="./bower_components/fontawesome/css/font-awesome.min.css">
+    <!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="css/IE.css" />
+		<style type="text/css">
+			.container {display:none;}
+			#IE {display:block !important;}
+		</style>
+		<![endif]-->
+    <style>
+
+    </style>
+    <style>
+    #rb-grid a {
+        transition: color 250ms;
+        -webkit-transition: color 250ms;
+    }
+    
+    #rb-grid a:hover {
+        color: white;
+    }
+    </style>
+    <meta property="twitter:account_id" content="4503599627479118" />
+</head>
+
+<body>
+    <div id="IE" style="display:none;"></div>
+    <div class="">
+        <div id="splitlayout" class="splitlayout">
+            <div class="intro">
+                <div class="side side-left">
+                    <div class="intro-content">
+                        <div class="profile"><img src="https://s.gravatar.com/avatar/f63fa5d09c43167f4795c3099e910a6e?s=512" alt="profile1"></div>
+                        <h1><span>Matthias Gattermeier</span><span>About me</span></h1>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+                <div class="side side-right">
+                    <div class="intro-content">
+                        <div class="profile"><img src="img/beaker-w.png" alt="profile1"></div>
+                        <h1><span>Code &<br>Concepts</span><span>Open Inspriation</span></h1>
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+            <div class="page page-right">
+                <div class="page-inner">
+                    <section>
+                        <div id="data">
+                            <input v-model="search">
+                            <ul id="rb-grid" class="rb-grid rb-grid-right clearfix">
+                                <li v-repeat="item in items | filterBy search in fields" class="re-grid-element {{item.classes}}">
+                                    <div>
+                                        <h3>{{item.title}}</h3>
+                                        <span>{{item.text}}</span>
+                                        <div v-if="item.links.length > 0" class="more">Read:
+                                            <span v-repeat="link in item.links">
+									               <a href="{{link.href}}" target="_blank" style=""><i class="fa {{link.class}}"></i> 
+									               {{link.title}}</a>
+									            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <!-- /page-inner -->
+            </div>
+            <!-- /page-right -->
+            <div class="page page-left">
+                <div class="page-inner" style="background-color: rgba(236, 235, 255, 0.47);">
+                    <section>
+                        <ul id="rb-grid" class="rb-grid rb-grid-left clearfix">
+                            <li class="re-grid-element rb-span-4" style="text-align: left; height:auto; background: rgb(97, 153, 92);">
+                                <h3>About me</h3>
+                                <p>I am a full stack software engineer with a strong Javascript background. My experiences include technologies such as Node.js, Express, Socket.IO, AngularJS, MongoDB, Redis, LevelDB, Jade, EJS, D3.js, Gulp, Grunt, Drupal, Convio / Blackbaud, as well as developing Chrome Extensions, RESTful API endpoints and scalable backends. I am also experienced in Linux server administration, DNS, Load balancer configuration as well as executing load and stress testing of server infrastructures and application performance. I have a passion for thinking outside the box and love to tackle challenges together with other talented and enthusiastic engineers. Nothing is more inspiring and satisfying than seeing ideas become reality.</p>
+                            </li>
+                            </a>
+                            <li class="re-grid-element rb-effect online-profiles" style="text-align: left; background: rgb(99, 128, 180);">
+                                <h3>Online</h3>
+                                <a href="https://www.github.com/Gattermeier" target="_blank"><i class="fa fa-github"></i> Github</a>
+                                <br>
+                                <a href="https://www.medium.com/@gattermeier" target="_blank"><i class="fa fa-medium"></i> Medium</a>
+                                <br>
+                                <a href="http://www.linkedin.com/in/gattermeier" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                                <br>
+                                <a href="http://www.twitter.com/gattermeier" target="_blank"><i class="fa fa-twitter"></i> Twitter</a>
+                                <br>
+                                <a href="http://www.google.com/+MatthiasGattermeier" target="_blank"><i class="fa fa-google-plus"></i> Google+</a>
+                            </li>
+                            <li class="re-grid-element rb-span-3" style="text-align: left;">
+                                <div style="float:left; width:50%;padding-right:10px;">
+                                    <h3>Contact</h3> Click on the QR code to see contact details, or scan to add my contact details to your phone.
+                                    <br>
+                                    <br>Give me a ring or send me an e-mail if you have something interesting to talk to me about! :)</div>
+                                <div class="qr-section" style="float:left; width:50%; padding-left:10px;">
+                                    <div class="qr-code"> <img class="qr-image" src="img/qrcode510.png" alt=""></div>
+                                </div>
+                            </li>
+                            <li class="re-grid-element rb-span-4" style="height:auto; padding-top:.5em; background: #C24747;">
+                                <h3 style="margin:0; padding:0;">Stuff I feed my brain with</h3>
+                            </li>
+                            <li class="re-grid-element rb-span-3" style="padding: 1.2em; height: auto !important; text-align: left; background: #e2674a;">
+                                <p>NPR: Ted radio hour The History of Rome
+                                    <br> Revolutions
+                                    <br> This American Life
+                                    <br> Radiolab
+                                    <br> Planet Money
+                                    <br> Intelligence Squared
+                                    <br> The Moth
+                                    <br> Sci Fri
+                                    <br> Freakonomics Radio
+                                    <br>
+                            </li>
+                            <li class="re-grid-element" style="height:100%; padding-left:.5em; background: #FFCC66;">
+                                <h3 style="font-size: 1.4em;">Podcasts</h3>
+                            </li>
+                            <li class="re-grid-element rb-span-4" style="height:auto; padding-top:.5em; background: rgb(166, 179, 99);">
+                                <h3 style="margin:0; padding:0;">Stuff that makes me happy</h3>
+                            </li>
+                            <li class="re-grid-element" style="height:100%; background: rgb(97, 153, 92);">
+                                <h3>Diving with Sharks</h3>
+                            </li>
+                            <li class="re-grid-element rb-span-3" style="padding: 0.4em; height: auto !important; background: #CC6699;">
+                                <p class="video-container" style="margin:0.4em;padding-top: 0;">
+                                    <iframe width="640" height="360" src="//www.youtube.com/embed/7XwKmY9b3EM" frameborder="0" allowfullscreen></iframe>
+                                </p>
+                            </li>
+                            <li class="re-grid-element rb-span-3" style="padding: 0.4em; height: auto !important;background: rgb(150, 134, 199);">
+                                <p class="video-container" style="margin:0.4em;padding-top: 0;">
+                                    <iframe width="640" height="360" src="//www.youtube.com/embed/kzeVptp0Rg0" frameborder="0" allowfullscreen></iframe>
+                                </p>
+                            </li>
+                            <li class="re-grid-element" style="height:100%; background: #666699;">
+                                <h3>Happy Sports</h3>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <!-- /page-inner -->
+            </div>
+            <!-- /page-left -->
+            <a href="#" class="back back-right" title="back to intro">&rarr;</a>
+            <a href="#" class="back back-left" title="back to intro">&larr;</a>
+        </div>
+        <!-- /splitlayout -->
+    </div>
+    <!-- /container -->
+    <script src="./js/icon-modernizr.custom.js"></script>
+    <script src="./js/modernizr.custom.js"></script>
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/SplitLayout.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.qr-code').on('click', function() {
+            $.ajax({
+                url: 'ajax.html',
+                type: 'GET',
+                success: function(data) {
+                    $('.qr-code').hide();
+                    $('.qr-section').append(data);
+                }
+            });
+        });
+        $.ajax({
+            url: 'ajax-IE.html',
+            tyle: 'GET',
+            success: function(data) {
+                $('#IE').append(data);
+            }
+        });
+    });
+    </script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-19406275-1', 'gattermeier.net');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    </script>
+    <script src="./js/jquery.smartresize.js"></script>
+    <!-- Twitter Audience -->
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    twttr.conversion.trackPid('l50ey');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l50ey&p_id=Twitter" />
+        <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l50ey&p_id=Twitter" /></noscript>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        var request = $.ajax({
+            url: './data.json',
+            method: "GET",
+            contentType: "application/json",
+            dataType: "json"
+        });
+
+        request.success(function(data) {
+            console.log(data);
+            var data = new Vue({
+                el: '#data',
+                data: data
+            })
+        });
+
+        request.fail(function(jqXHR, textStatus) {
+            console.log("Request failed: ", jqXHR.status, textStatus);
+        });
+
+    });
+    </script>
+</body>
+
+</html>

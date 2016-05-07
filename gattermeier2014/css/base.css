@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0; height: 100%; }
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  color: #aaa;
+  background: #fff;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', Calibri, Arial, sans-serif;  
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.no-touch a:hover,
+.no-touch a:active {
+  color: #333;
+}
+
+
+/*GRID*/
+ul.grid li {
+    margin: 0.5%;
+    width: 100%;
+    color: #fff;
+    display: block;
+    float: left;
+    padding: .9em;
+    cursor: pointer;
+    position: relative;
+}    
+
+@media (min-width: 768px) {
+
+  ul.grid li {
+      width: 24%;
+  }    
+      
+  ul.grid li:nth-child(3n+2) { 
+      background-color: green;
+      width: 49%;
+  }
+}
+
+li.re-grid-element {
+  height: 14em;}
+
+
+
+li.re-grid-element a {
+  color: #525252;
+}
+
+li.re-grid-element div.more {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: .9em;
+}
+li.re-grid-element.online-profiles a {
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}

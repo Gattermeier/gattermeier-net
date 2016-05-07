@@ -1,0 +1,22 @@
+{
+  "name": "gattermeier",
+  "version": "1.0.0",
+  "authors": [
+    "Matthias Gattermeier <matthias.gattermeier@gmail.com>"
+  ],
+  "description": "Personal Website",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://www.gattermeier.net",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.4.0"
+  }
+}
